@@ -1,0 +1,11 @@
+Hoy veremos todo lo relacionado a las ramas en git, ¿que son las ramas?.
+
+Cambios en gitHub, como subirlos.
+
+Pull Request.
+
+Resolucion de conflictos en git.
+
+todo en VSC
+
+git flow, trunk, main, master, ramas principales
