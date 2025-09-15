@@ -86,5 +86,56 @@ console.log(copiaPersona.edad); // Output: 47
 
 
 //funciones flecha
+function saludo(){
 
-const sumarFlecha = (a, b) => a + b;
+}
+
+const saludo2 = () => console.log("hola");
+
+saludo2(); // Output: hola
+
+const sumar2 = (a, b) => a + b;
+
+console.log(sumar2(4, 5)); // Output: 9
+
+//declarativa
+
+// Imperativa
+const numeros = [1, 2, 3, 4, 5];
+let cuadrados = [];
+
+for (let i = 0; i < numeros.length; i++) {
+    cuadrados.push(numeros[i] * numeros[i]);
+}
+
+console.log(cuadrados); // Output: [1, 4, 9, 16, 25]
+
+// Declarativa
+//  map
+const numeros2 = [1, 2, 3, 4, 5];
+const cuadrados2 = numeros2.map(num => num * num);
+console.log(cuadrados2); // Output: [1, 4, 9, 16, 25]
+//  filter
+const numeros3 = [1, 2, 3, 4, 5];
+const pares = numeros3.filter(num => num % 2 === 0);
+console.log(pares);
+//  reduce
+const numeros4 = [1, 2, 3, 4, 5, 6];
+const sumaTotal = numeros4.reduce((acum, num) => acum + num, 0);
+console.log(sumaTotal); // Output: 15
+//  foreach
+const numeros5 = [1, 2, 3, 4, 5, 6];
+numeros5.forEach(function(numero,index){
+    console.log(`El numero en la posicion ${index} es ${numero}`);
+});
+//  find
+const numeros6 = [1, 2, 3, 4, 5, 6];
+const encontrado = numeros6.find(num => num > 3);
+console.log(encontrado); // Output: 4
+//  some
+const numeros7 = [1, 2, 3, 4, 5, 6];
+const hayMayoresQue4 = numeros7.some(num => num > 4);
+console.log(hayMayoresQue4);
+
+
+
